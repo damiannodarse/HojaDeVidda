@@ -16,6 +16,14 @@
     </header>
 
     <nav style="border: 1px solid black;">
+      <h2>DATOS PERSONALES</h2>
+      <h3>NOMBRE: </h3><p>Damián</p>
+      <h3>APELLIDOS: </h3><p>Nodarse Alfaro</p>
+      <h3>FECHA Y LUGAR DE NACIMIENTO: </h3><p>14/01/1988 La Habana, Cuba</p>
+    </nav>
+    <br>
+
+    <nav style="border: 1px solid black;">
       <a href="../index.html">Inicio</a>
       <a href="educacion.html">Educación</a>
       <a href="experiencia.html">Experiencia</a>
@@ -24,8 +32,88 @@
 
     <nav style="border: 1px solid black;">
       <h2>EDUCACIÓN</h2>
+      <table border="1" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>¿Culminó?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nov/2017 a la fecha</td>
+            <td>Next U</td>
+            <td>Virtual</td>
+            <td>En proceso</td>
+          </tr>
+          <tr>
+            <td>2010-2015</td>
+            <td>ITESM</td>
+            <td>Michoacán, Mex</td>
+            <td>Sí</td>
+          </tr>
+          <tr>
+            <td>2006-2009</td>
+            <td>Colegio Nacional</td>
+            <td>Buenos Aires, Arg</td>
+            <td>Sí</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+
+      <form name="Agregar estudios">
+        <h3>Agregar estudios</h3>
+
+        <p>
+          <label for="Año"><strong>Año:</strong></label>
+          <br>
+          <select name="Año">
+            <option value="1">2017</option>
+            <option value="2">2016</option>
+            <option value="3">2015</option>
+            <option value="1">2014</option>
+            <option value="2">2013</option>
+            <option value="3">2012</option>
+          </select>
+          <br>
+        </p>
+
+        <p>
+          <label for="Institucion"><strong>Institución</strong> </label>
+          <input type="text" name="Institucion" required>
+        </p>
+
+        <p>
+          <label for="Lugar"><strong>Lugar:</strong></label>
+          <br>
+          <textarea name="Lugar" rows="3" cols="60"></textarea>
+        </p>
+
+        <p>
+          <label for="Culmino"><strong>Culminó:</strong></label>
+          <input type="radio" name="Culmino">Sí
+          <input type="radio" name="Culmino">No
+        </p>
+    
+        <p>
+        <button type="button" name="enviar">Enviar</button>
+        <br>
+        </p>
+
+      </form>
 
     </nav>
     <br>
+
+    <footer>
+      <nav style="border: 1px solid black;">
+        <h2>Contacto</h2>
+        <p><strong>Correo: </strong><i>damian_nodarse@hotmail.com</i></p>
+        <a href="mailto:damian_nodarse@hotmail.com?subject=feedback">Enviar un correo desde esta página</a>
+      </nav>
+    </footer>
   </body>
 </html>
